@@ -6,6 +6,10 @@
 
 function myFunction() {
   var today = new Date(); //creates a var named today and stores today's date into it. Blank gives today's date by default
+
+  var firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+  console.log("first day of this month: ", firstDayOfMonth);
+
   var dateSevenDaysAgo = new Date(today.getTime() - 24 * 60 * 60 * 1000 * 7);
 
   console.log(dateSevenDaysAgo);
@@ -18,7 +22,7 @@ function myFunction() {
 
   var eventsLastSevenDays = CalendarApp.getOwnedCalendarById(
     "lzh.carey@gmail.com"
-  ).getEvents(dateSevenDaysAgo, today);
+  ).getEvents(firstDayOfMonth, today);
   // console.log(eventsLastSevenDays);
 
   eventsThatStartWithDollarSign = [];
@@ -34,9 +38,15 @@ function myFunction() {
         parseInt(eventsLastSevenDays[i].getTitle().replace("$", ""))
       );
       //console.log(eventsThatStartWithDollarSign);
-      console.log(eventsThatStartWithDollarSign.reduce((a, b) => a + b, 0));
     }
   }
+
+  console.log(
+    "Month: ",
+    today.getMonth(),
+    " Spendings to date: ",
+    eventsThatStartWithDollarSign.reduce((a, b) => a + b, 0)
+  );
 
   console.log("test push from clasp");
 }

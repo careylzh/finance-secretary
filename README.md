@@ -34,7 +34,8 @@ Happy hacking!
 - [ ] Download types@google-apps-script, try clasp's feature to transpile ts to js
 
 ## Resources
-https://www.youtube.com/watch?v=4Qlt3p6N0es&ab_channel=LearnGoogleSpreadsheets
-https://github.com/google/clasp/tree/d6fbaae5e6ad6353fe8dc9ff771c1aed1b6b1a59
-https://stackoverflow.com/questions/15890958/how-to-install-a-previous-exact-version-of-a-npm-package
-https://github.com/google/clasp/issues/853
+- https://www.youtube.com/watch?v=4Qlt3p6N0es&ab_channel=LearnGoogleSpreadsheets
+- https://github.com/google/clasp/tree/d6fbaae5e6ad6353fe8dc9ff771c1aed1b6b1a59
+- https://stackoverflow.com/questions/15890958/how-to-install-a-previous-exact-version-of-a-npm-package
+- https://github.com/google/clasp/issues/853
+- https://groups.google.com/g/adwords-scripts/c/JGSb0cvXO2k?pli=1

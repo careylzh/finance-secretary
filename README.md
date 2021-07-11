@@ -6,8 +6,8 @@ Carey's personal finance reporting system  [![clasp](https://img.shields.io/badg
 
 - I use google calendar events to keep track of my daily expenditure, which is a mixture of cash and digital spendings
 - Wanted a build a convenient expenditure tracking system on top of this existing workflow
-- Receive email every week so I could be reminded of my spendings before I spend again
-
+~~- Receive email every week so I could be reminded of my spendings before I spend again~~
+Feels more intuitive to click the script and I get my spendings for the month to date
 ## Setup
 I am using Clasp, a node project developed by google to push my code to my google account. Wanted to use vs code as the editor, but realised there isn't any popular syntax extensions for apps script.
 
@@ -26,8 +26,11 @@ Happy hacking!
 - [x] setup clasp workflow
 - [x] date fetching logic
 - [x] iterate through time period, search for $
-- [ ] decide on medium to receive info - html email? sms? link it to a react component and put on Vercel? 
-- [ ] set periodic triggers
+- [x] summation logic
+- [x] parsing string to int? (not automatic in js)
+- [x] decide on medium to receive info - html email? sms? link it to a react component and put on Vercel? 
+~~- [ ] set periodic triggers~~
+- [ ] why isn't my native js methods like array.reduce or parseInt() showing up in autocomplete suggestions?
 - [ ] Download types@google-apps-script, try clasp's feature to transpile ts to js
 
 ## Resources

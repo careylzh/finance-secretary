@@ -25,8 +25,16 @@ function myFunction() {
 
   for (var i = 0; i < eventsLastSevenDays.length; i++) {
     if (eventsLastSevenDays[i].getTitle().startsWith("$")) {
-      eventsThatStartWithDollarSign.push(eventsLastSevenDays[i].getTitle());
-      // console.log(eventsThatStartWithDollarSign);
+      /**
+       * IMPENDING UGLY CODE: THE FOLLOWING LINE PERFORMS 3 FUNCTIONS:
+       * reference title of each event
+       * replace dollar sign in the title
+       * pushes replaced title into new array*/
+      eventsThatStartWithDollarSign.push(
+        parseInt(eventsLastSevenDays[i].getTitle().replace("$", ""))
+      );
+      //console.log(eventsThatStartWithDollarSign);
+      console.log(eventsThatStartWithDollarSign.reduce((a, b) => a + b, 0));
     }
   }
 

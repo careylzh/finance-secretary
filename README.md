@@ -14,7 +14,7 @@ I am using Clasp, a node project developed by google to push my code to my googl
 1. Create a new project on script.google.com, copy the Script ID in project settings 
 2. Go to https://script.google.com/home/usersettings and toggle "Google Apps Script API"
 3. `npm i -g @google/clasp@2.3.2` 
-   Note: the latest version doesn't work and gives you an async error
+   *Note: the latest version doesn't work and gives you an async error*
 4. `clasp login` from any directory (since clasp was installed globally). A browser window pops up and asks to allow Clasp in your Google account 
 5. navigate to your project directory, `clasp clone [scriptID]`. 
 
